@@ -1,0 +1,61 @@
+//http://paletton.com/#uid=53o0h1khVmd4pCYa+s6o-gFFN8Kklsr6bQFDhbvapDnuu4hxkuJsdjQzHp4v2wDmFFQgm
+
+@import "./normalize";
+@import "./main";
+
+$dark: #01222B;
+$mid: #154553;
+$light: #9EB1B7;
+$external-link: #44B48F;
+$github-icon: white;
+$twitter-icon: white;
+
+body {
+	background: $dark;
+	color: $light;
+	padding: 0;
+}
+
+header {
+	background: $mid;
+	h1 {		
+		max-width: 800px;
+		margin: 0 auto;
+		color: #eee;
+		padding: .7em 1em;
+		text-shadow: 1px 1px 1px $dark;
+	} 
+}
+
+.content {
+	padding: .7em 2em;
+	min-height: 600px;
+	margin: 0 auto;
+	max-width: 800px;
+
+	section.intro {
+		font-size: 1em;
+		margin: 1em 3em .7em 0; 
+		max-width: 500px;
+	}
+
+	section.links {
+		font-size: 2em;
+		margin: .7em 0 ;	
+		a {
+			color: $external-link;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 1px dotted $external-link;
+			}
+		}
+	}
+
+	.twitter i {
+		color: $twitter-icon;
+	}
+	.github i {
+		color: $github-icon;
+	}
+
+}
