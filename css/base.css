@@ -444,5 +444,7 @@ header {
         border-bottom: 1px dotted #44B48F; }
   .content .twitter i {
     color: white; }
+  .content .blog i {
+    color: white; }
   .content .github i {
     color: white; }
