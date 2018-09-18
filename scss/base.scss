@@ -18,30 +18,56 @@ body {
 
 header {
 	background: $mid;
-	h1 {		
-		max-width: 800px;
+    padding-bottom: 20px;
+	h1, section{
+		max-width: 1000px;
 		margin: 0 auto;
 		color: #eee;
+        display:block;
+    }
+    section {
+        font-size: 1.5em;
+        i { font-size:0.8em; color:#bbb}
+    }
+	h1{
 		padding: .7em 1em;
 		text-shadow: 1px 1px 1px $dark;
-	} 
+	}
 }
 
-.content {
-	padding: .7em 2em;
-	min-height: 600px;
-	margin: 0 auto;
-	max-width: 800px;
+section.intro {
+    p {
+        display: inline;
+        width: 50%;
+    }
+}
 
-	section.intro {
-		font-size: 1em;
-		margin: 1em 3em .7em 0; 
-		max-width: 500px;
-	}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content-left {
+
+}
+
+.content-left, .content-right {
+	padding: .7em 25px;
+	min-height: 600px;
+    float: left;
+    max-width:450px;
+
+    .intro {
+        height: 100px;
+        font-size:1.2em;
+    }
 
 	section.links {
 		font-size: 2em;
-		margin: .7em 0 ;	
+		margin: .7em 1em;
+        display:inline-block;
+        min-width:40%;
+
 		a {
 			color: $external-link;
 			text-decoration: none;
@@ -51,14 +77,14 @@ header {
 		}
 	}
 
-	.twitter i {
-		color: $twitter-icon;
-	}
-	.blog i {
-		color: white;
+	i {
+		width:35px;
+        text-align: center;
+
 	}
 	.github i {
 		color: $github-icon;
+
 	}
 
 }
